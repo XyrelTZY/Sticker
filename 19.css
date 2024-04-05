@@ -1,0 +1,58 @@
+html,body{
+    height:100%;
+  }
+  
+  *{
+    padding:0!important;
+    margin:0!important;
+  }
+
+  .window-left{
+    width:0%;
+    background:black;
+    height:100%;
+    float: left;
+    display:block;
+    animation: RTL 1s ease;
+
+  }
+  .window-right{ 
+    width:0%;
+    background:black;
+    height:100%;
+    float:right;
+    display:block;
+    animation: RTL 1ss ease;
+  }
+  .loader{
+    position:relative;
+    z-index:3;
+  }
+  .loader img{
+    opacity:0;
+    position: fixed; 
+    top: 30%; 
+    left: 40%;
+    animation: Hideloader 5s ease;
+  }
+  .textFY{
+    opacity:1;
+    left:30%;
+    animation: Hideloader 1s ease;
+  }
+  @keyframes RTL {
+    from{
+      width:100%;
+    }
+    to{
+      width:0%;
+    }
+  }
+  @keyframes Hideloader {
+    from{ 
+      opacity:0;
+    }
+    to{
+      opacity:1;
+    }
+  }
